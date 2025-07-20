@@ -1,0 +1,15 @@
+title: Momog
+email: muhammad.mnayar@gmail.com
+description: >-
+  I am a software engineer based in France.
+  Currently working at Amadeus.
+  This blog chronicles my technical discoveries, engineering challenges,
+  and insights gained while navigating modern software development.
+baseurl: ""
+url: "https://mouhamadalmounayar.github.io"
+twitter_username: ManaHeap
+github_username: mouhamadalmounayar
+
+theme: jekyll-theme-hacker
+plugins:
+  - jekyll-feed
