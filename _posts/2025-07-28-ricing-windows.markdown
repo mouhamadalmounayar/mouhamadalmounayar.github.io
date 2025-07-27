@@ -1,7 +1,7 @@
 ---
 layout: "post"
 author: "Al Mounayar Mouhamad"
-date: 2025-27-08
+date: 2025-07-27
 title: "Ricing Windows"
 tags: "config"
 ---
