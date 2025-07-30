@@ -6,7 +6,6 @@ title: "Ricing Windows"
 tags: "config"
 ---
 
-# Ricing Windows (The terminal)
 I have been a loyal Linux user since I started my journey in software engineering. I really took pleasure in ricing my Hyprland config, configuring Neovim, playing with themes, and so on.  
 
 I would say I spend more time enhancing my developer experience than actually developing stuff.
