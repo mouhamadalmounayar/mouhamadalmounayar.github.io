@@ -18,7 +18,7 @@ I was tempted to use tui-textarea at first, since the editor worked out of the b
 
 I was disappointed to discover that the rendered text didn’t support ANSI escape codes, and that there was no way to convert ANSI formatting into Ratatui widget formatting while continuing to use tui-textarea, since it operates on plain text rather than line- or paragraph-based widgets. I quickly accepted the fact that I needed to implement my own minimal editor for this to work.
 
-In my ratatui application, I was using a component based architecture, where each component keeps track of its local state, and when the component needs to communicate with other components in the application, it syncs the local state with the global state, which other components can access.
+In my ratatui application, I am using a component based architecture, where each component keeps track of its local state, and when the component needs to communicate with other components in the application, it syncs the local state with the global state, which other components can access.
 
 Here is what the `Component` trait looks like
 
@@ -34,7 +34,7 @@ The `handleEvent` is called on one component per render iteration, (depending on
 
 ### Naive approach
 
-The naive approach is to keep track of a `Vec<String>`or even a `String` in the local editor state, and handle the key events by updating the buffer.
+The naive approach is to keep track of a `Vec<String>` or even a `String` in the local editor state, and handle the key events by updating the buffer.
 
 For inserting characters at the end of the buffer this is fine, but it quickly becomes ineffiscient whent we want to move the cursor around.
 
@@ -180,7 +180,7 @@ impl GapBuffer {
 }
 ```
 
-With the `GapBuffer` struct, handling editor's event is now easy. Here is my `handle_event()` method for the editor's component :
+With the `GapBuffer` struct, handling editor's events is now easy. Here is my `handle_event()` method for the editor's component :
 
 ```rust
  fn handle_event(&mut self, event: &Event, state: &mut AppState) {
