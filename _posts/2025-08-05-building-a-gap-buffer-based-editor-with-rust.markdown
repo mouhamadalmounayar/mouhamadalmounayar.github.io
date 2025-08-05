@@ -1,3 +1,11 @@
+---
+layout: "post"
+author: "Al Mounayar Mouhamad"
+date: 2025-08-05
+title: "Building a Gap Buffer Editor in Rust"
+tags: "tui"
+---
+
 For the last couple of weeks, I have been working on a tui snippet manager which allows users to save code snippets, display them and edit them without leaving the terminal. I decided to go with rust along with ratatui for this project for obvious reasons.
 
 Thus, I needed to build a minimal editor widget with these basic functionalities :
